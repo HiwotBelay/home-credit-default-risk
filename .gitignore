@@ -1,0 +1,9 @@
+# Competition data is not redistributable
+input/
+*.csv
+*.zip
+# Cached models and outputs
+output/
+*.npy
+__pycache__/
+.ipynb_checkpoints/

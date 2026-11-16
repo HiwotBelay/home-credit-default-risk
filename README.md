@@ -1,6 +1,8 @@
 # Home Credit Default Risk: Stacked Ensemble
 
-Solution to the **GCI Global 2026 in-class competition** (Matsuo Lab, University of Tokyo GCI program), based on the Kaggle [Home Credit Default Risk](https://www.kaggle.com/c/home-credit-default-risk) problem.
+Solution to the **GCI World 2026 in-class competition** (Matsuo Lab, University of Tokyo GCI program), based on the Kaggle [Home Credit Default Risk](https://www.kaggle.com/c/home-credit-default-risk) problem.
+
+**Final rank: 78th of 5,500+ participants** (public leaderboard ROC-AUC 0.77822).
 
 ## Problem
 
@@ -45,6 +47,8 @@ Every design choice was accepted only if it improved **cross-validated AUC on tw
 | Single LightGBM (out-of-fold) | ~0.774 |
 | **Final ensemble (out-of-fold, 171k customers)** | **0.77517** |
 | **Final ensemble (public leaderboard)** | **0.77822** |
+
+**Final rank: 78th of 5,500+ participants** on the competition leaderboard.
 
 Ideas tested that did **not** help, and were left out: DART boosting, pseudo-labeling on test data, a tree-based meta-stacker, a slower learning rate, and extra features (passport-renewal timing, number roundness, value frequencies, missingness patterns).
 
